@@ -19,10 +19,10 @@ function App() {
 
     try {
       // Live API endpoints (replace with your own backend URLs)
-      const res = await axios.get(`http://localhost:5000/weather/${city}`);
+      const res = await axios.get(`https://weather-app-hdp0.onrender.com/${city}`);
       setWeather(res.data);
 
-      const forecastRes = await axios.get(`http://localhost:5000/forecast/${city}`);
+      const forecastRes = await axios.get(`https://weather-app-hdp0.onrender.com/${city}`);
       setForecast(forecastRes.data);
     } catch (err) {
       // Mock fallback
